@@ -1,0 +1,45 @@
+.banner{
+    height: 100vh;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.banner::before{
+    content:'';
+    background:linear-gradient(to top,rgba(0, 0, 0, 1.0), transparent);
+    position: absolute;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+
+}
+
+.banner-text-area{
+    width: 36%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    padding: 2rem;
+}
+
+.banner-text-area > * {
+    z-index: 2;
+}
+
+@media screen and (max-width:768px) {
+    .banner-text-area {
+        width: 90%;
+        padding: 1rem;
+      }
+ 
+      .banner{
+        height: 56vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover; 
+    
+    }
+}
