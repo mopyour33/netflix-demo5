@@ -4,11 +4,12 @@ import { usePopluarMoviesQuery } from '../../../../hooks/usePopularMovies'
 import { Alert } from 'bootstrap';
 import Carousel from 'react-multi-carousel';
 import MovieCard from '../movieCard/MovieCard';
+import "./PopularMovieSlide.style.css";
 
 const responsive = {
   desktop: {
     breakpoint: { max: 3000, min: 1024 },
-    items: 8,
+    items: 6,
     slidesToSlide: 3 // optional, default to 1.
   },
   tablet: {
