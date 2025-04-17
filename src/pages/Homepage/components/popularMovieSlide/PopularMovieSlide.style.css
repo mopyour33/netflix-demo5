@@ -2,3 +2,20 @@
     overflow: hidden;
     height: 440px;
 }
+
+.movie-slider{
+    margin-right: 10px;
+}
+
+@media screen and (max-width:768px) {
+    .movie-slider{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .carousel-container{
+        height: auto;
+        padding-bottom: 10px;
+    }
+
+}
