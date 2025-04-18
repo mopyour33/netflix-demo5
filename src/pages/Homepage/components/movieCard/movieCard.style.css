@@ -15,6 +15,11 @@
     color: white;
     font-weight: bold;
     overflow-wrap: break-word;
+    word-break: break-word;       
+    overflow: hidden;             
+    padding: 10px;                
+    box-sizing: border-box;       
+    font-size: 14px;              
 }
 
 .overlay:hover{
