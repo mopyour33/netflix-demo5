@@ -3,6 +3,10 @@ import { Badge } from 'react-bootstrap'
 import './movieCard.style.css';
 
 const MovieCard = ({movie, index}) => {
+
+  const vote_average = Math.round(movie.vote_average*10)/10
+  const popularity = Math.round(movie.popularity*10)/10
+
   return (
     <div style={{
       backgroundImage: 
@@ -16,8 +20,8 @@ const MovieCard = ({movie, index}) => {
       {movie.genre_ids.map((id,index)=>(
         <Badge bg="danger" key={index}>{id}</Badge>
       ))}
-      <div>{movie.vote_average}</div>
-      <div>{movie.popularity}</div>
+      <div>평점 : {vote_average}</div>
+      <div>인기도 : {popularity}</div>
       <div>{movie.adult ? "over 18" : "under 18"}</div>
       </div>   
     </div>
