@@ -17,7 +17,6 @@ const MovieCard = ({ movie, index }) => {
     return genreNameList
 
   }
-  console.log('kkk:', genreData);
 
   const vote_average = Math.round(movie.vote_average * 10) / 10
   const popularity = Math.round(movie.popularity * 10) / 10

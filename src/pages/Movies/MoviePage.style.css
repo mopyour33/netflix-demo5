@@ -6,3 +6,37 @@
     justify-content: center;
     align-items: center;
 }
+
+
+.No-result{
+    font-size: 30px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+
+    .movie-card {
+        margin: 0 auto;
+      }
+
+    .pagination {
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      white-space: nowrap;
+      justify-content: start;
+      padding: 0 10px;
+      gap: 4px;
+    }
+  
+    .pagination .page-item {
+      min-width: 32px;
+      font-size: 12px;
+    }
+  
+    .pagination .page-link {
+      padding: 0.25rem 0.5rem;
+    }
+  }
